@@ -1,0 +1,170 @@
+.theApp {
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mainContainer {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.myBudgetContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.budgetTitle{
+    text-align: left;
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+.budgetContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 40px;
+    width: 100%;
+    height: 100px;
+    background-color: lightgray;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+
+
+p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.editButton {
+    border: 0;
+    background-color: rgb(11, 81, 211);
+    color: white;
+    border-radius: 10px;
+    margin-right: 20px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.remainingContainer {
+ background-color: lightseagreen;
+ width: 100%;
+ height: 100px;
+ padding-left: 40px;
+ display: flex;
+ align-items: center;
+ margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.spentContainer {
+    background-color: lightblue;
+    width: 100%;
+    height: 100px;
+    padding-left: 40px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.expensesContainer {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+h2 {
+    font-size: 35px;
+    margin: 20px 0 10px 0;  
+}
+
+.inputSearch {
+    padding-left: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    height: 50px;
+    width: 100%;
+    margin: 5px 0;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.inputSearch:focus{
+    outline: none;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+li {
+    list-style: none;
+    width: 100%;
+    
+}
+
+.expensesList {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    border-bottom: 0;
+}
+
+.text {
+    flex: 75%;
+    margin-left: 20px;
+
+}
+
+.desc {
+    flex: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price{
+    padding: 3px 12px;
+    border-radius: 10%;
+    background-color: rgb(11, 81, 211);
+    color: white;
+    font-weight: 600;
+}
+
+.deleteIcon {
+    background-color: black;
+    color: white;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
