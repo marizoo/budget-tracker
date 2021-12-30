@@ -3,7 +3,7 @@ import '../App.css'
 
 const ExpenseItem = ({data}) => {
     return (
-        <li key={data.id}>
+        <li >
         <div className="expensesList">
           <div className="text">
 
@@ -11,7 +11,7 @@ const ExpenseItem = ({data}) => {
           </div>
           <div className="desc">
               <div className="price">${data.cost}</div>
-              <div className="deleteIcon">x</div>   
+              <button className="deleteIcon">x</button>   
           </div>
        </div>
     </li>

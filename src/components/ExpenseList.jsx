@@ -1,26 +1,20 @@
-import React, {useState} from 'react'
+import React, {useContext} from 'react'
 import '../App.jsx'
 import ExpenseItem from './ExpenseItem.jsx';
+import { AppContext } from '../context/AppContext.jsx';
 
-const EXPENSES_DATA = [ 
-    {id: 1231231, name: "Shopping", cost: 50},
-    {id: 1231232, name: "Holiday", cost: 300},
-    {id: 1231233, name: "Transportation", cost: 70},
-    {id: 1231234, name: "Fuel", cost: 40},
-    {id: 1231235, name: "Child Care", cost: 500},
-]
+
 
 const ExpenseList = () => {
 
-    const [datas, setDatas] = useState(EXPENSES_DATA);
+    const {expenses} = useContext(AppContext);
 
+  
     return (
         <ul>
-            {datas.map( data => (
-               <ExpenseItem data={data}/>
+            {expenses.map(expense => (
+               <ExpenseItem data={expense} key={expense.id}/>
             ) )}
-        
-        
       </ul>
     )
 }
